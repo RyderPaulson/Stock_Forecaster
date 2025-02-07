@@ -1,9 +1,8 @@
 %STOCKFORECASTER Summary of this function goes here
 %   Explanation to come
-clear; clc;
+clear; clc; addpath("data\");
 key = string(importdata("APIKey.txt"));
 
-tickers = ["IBM" "SPY" "QQQ"];
+tickers = ["FNDX" "ARM" "QQQ"];
 
 pullAndProcess(key,tickers);
-
